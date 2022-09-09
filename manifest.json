@@ -30,7 +30,9 @@
     "tabs"
   ],
   "host_permissions": [
-    "http://*/*",
-    "https://*/*"
+    "https://youtube.com/*",
+    "http://youtube.com/*",
+    "http://www.youtube.com/*",
+    "https://www.youtube.com/*"
   ]
 }
