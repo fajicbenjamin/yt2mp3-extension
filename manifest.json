@@ -20,5 +20,14 @@
         "script.js"
       ]
     }
+  ],
+
+  "permissions": [
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
   ]
 }

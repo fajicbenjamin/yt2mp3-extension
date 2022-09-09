@@ -1,4 +1,4 @@
-setTimeout(() => {
+function addDownloadButton() {
     let buttons = document.getElementById('top-level-buttons-computed');
 
     let downloadButton = document.createElement('a');
@@ -10,5 +10,9 @@ setTimeout(() => {
 
     let downloadUrl = 'yt2mp3app://' + document.URL
     document.getElementById('mp3-btn').setAttribute('href', downloadUrl)
+}
 
+setTimeout(() => {
+    if (!document.getElementById('mp3-btn'))
+        addDownloadButton()
 }, 1000)
