@@ -10,13 +10,16 @@ function injectScript(tabId) {
 
 }
 
-// adds a listener to tab change
-chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
+// To handle youtube video page
+chrome.webNavigation.onHistoryStateUpdated.addListener(function (details) {
 
-    // check for a URL in the changeInfo parameter (url is only added when it is changed)
-    if (changeInfo.url) {
+    if (details.frameId === 0) {
 
-        // calls the inject function
-        injectScript(tabId);
+        // Fires only when details.url === currentTab.url
+        chrome.tabs.get(details.tabId, function (tab) {
+            if (tab.url === details.url) {
+                injectScript(details.tabId);
+            }
+        });
     }
 });
