@@ -12,4 +12,4 @@ This extension leverages that protocol; it renders download button on YouTube vi
 
 ## Installation
 
-This extension isn't yet published in Google Chrome Store and at the moment only available through loading it as unpacked extension. Consult [Chrome's documentation](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked) on loading unpacked extension
+This extension isn't yet published in Google Chrome Store and at the moment is only available through loading it as unpacked extension. First download this repository and then consult [Chrome's documentation](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked) on loading unpacked extension
